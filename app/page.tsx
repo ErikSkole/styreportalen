@@ -5,7 +5,7 @@ export default function Home() {
         <div className=""></div>
       </div>
       <div className="filterBox rounded-lg basis-1/4">
-        <div className=""></div>
+        <div className="">mingilingi</div>
       </div>
     </main>
   )
