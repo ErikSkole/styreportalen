@@ -35,10 +35,8 @@ h1 {
 
 .mainContent {
   display: flex;
-  background-color: var(--main-content);
-  height: 50vh;
-  margin: 5rem;
 }
+
 .filterBox {
   display: flex;
   background-color: var(--main-content);
