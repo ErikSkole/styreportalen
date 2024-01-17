@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: #161616;
+  --foreground-rgb-dark: #161616;
+  --main-text-dark: #ffffff;
+  --header-text: #ffffff;
+  --main-content-dark: #464646;
+  --foreground-rgb: #FFFFFF;
+  --main-text: #000000;
+  --main-content: #EEEEEE;
   --background-header: #054794;
-  --main-text: #ffffff;
-  --main-content: #464646;
 }
 
 body {
@@ -17,7 +21,7 @@ body {
   display: flex;
   justify-content: space-between;
   height: 8vh;
-  color: var(--main-text);
+  color: var(--header-text);
   background-color: var(--background-header);
 }
 
