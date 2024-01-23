@@ -7,6 +7,7 @@
   --foreground-rgb: #FFFFFF;
   --main-text: #000000;
   --main-content: #EEEEEE;
+  --main-content-secondary: #E3E3E3;
   --background-header: #054794;
 
   /* Dark theme */
@@ -44,6 +45,10 @@ h1 {
   margin-left: 1rem;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 .main { /* Container around the actual content (has the background of the page) */
   background-color: var(--foreground-rgb);
 }
@@ -52,6 +57,32 @@ h1 {
   height: 80vh;
   width: 75vh;
   background-color: var(--main-content);
+}
+
+.searchContent {
+
+}
+
+.mainBox { /* Container for standard elements */
+  display: flex;
+  background-color: var(--main-content);
+  border-radius: 0.5rem;
+  padding: 5px;
+  padding-top: 1rem;
+  margin: 1rem;
+  min-height: 50vh;
+}
+
+.arrangement {
+  display: flex;
+  margin: 1rem;
+  margin-top: 0;
+  background-color: var(--main-content-secondary);
+  border-radius: 0.5rem;
+}
+
+.searchBox {
+
 }
 
 .filterBox {
