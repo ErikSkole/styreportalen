@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="header">
           <h1>Program.no</h1>
-          <button>
+          <button className='homeBtn'>
             button
           </button>
         </div>

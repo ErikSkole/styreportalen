@@ -3,14 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb-dark: #161616;
-  --main-text-dark: #ffffff;
-  --header-text: #ffffff;
-  --main-content-dark: #464646;
+  /* Light theme */
   --foreground-rgb: #FFFFFF;
   --main-text: #000000;
   --main-content: #EEEEEE;
   --background-header: #054794;
+
+  /* Dark theme */
+  --foreground-rgb-dark: #161616;
+  --main-text-dark: #ffffff;
+  --header-text: #ffffff;
+  --main-content-dark: #464646;
 }
 
 body {
@@ -25,6 +28,14 @@ body {
   background-color: var(--background-header);
 }
 
+.homeBtn {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  color: var(--header-text);
+  text-decoration: none;
+}
+
 h1 {
   font-size: 2rem;
   margin: 0;
@@ -33,8 +44,14 @@ h1 {
   margin-left: 1rem;
 }
 
-.mainContent {
-  display: flex;
+.main { /* Container around the actual content (has the background of the page) */
+  background-color: var(--foreground-rgb);
+}
+
+.mainContent { /* The actual content of the main page */
+  height: 80vh;
+  width: 75vh;
+  background-color: var(--main-content);
 }
 
 .filterBox {

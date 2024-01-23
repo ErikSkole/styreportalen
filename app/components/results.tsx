@@ -3,7 +3,7 @@ export default function Results() {
         <main>
             <div className="mainBox">
                 <div className="arrangement">
-                    
+                    <p>Content</p>
                 </div>
             </div>
         </main>
