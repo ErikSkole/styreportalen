@@ -1,7 +1,11 @@
 export default function Results() {
     return (
         <main>
-            Results
+            <div className="mainBox">
+                <div className="arrangement">
+                    <p>Content</p>
+                </div>
+            </div>
         </main>
     )
 }
