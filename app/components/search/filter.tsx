@@ -1,7 +1,6 @@
 export default function Filter() {
     return (
-        <main>
-            Filter
+        <main className="mainBox basis-1/4 h-1/2">
         </main>
     )
 }
