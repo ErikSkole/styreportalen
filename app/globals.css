@@ -59,6 +59,18 @@ h2 {
   background-color: var(--main-content);
 }
 
+.tempLink {
+  font-size: xx-large;
+  color: var(--header-text);
+  border-radius: 5px;
+  background-color: var(--background-header);
+  padding: 1rem;
+}
+
+.tempLink:hover {
+  background-color: #054894a9;
+}
+
 .searchContent {
 
 }
@@ -85,8 +97,38 @@ h2 {
 
 }
 
+.filter {
+  background-color: var(--main-content-secondary);
+  margin: 0.5rem;
+  padding-top: 0.5rem;
+}
+
 .filterBox {
   display: flex;
   background-color: var(--main-content);
   height: 50vh;
+}
+
+.searchBarFilter {
+  margin: 1rem;
+  background-color: var(--main-content-secondary);
+  height: 2.5rem;
+}
+
+.filterContent {
+
+}
+
+.triangle {
+  height: 20px;
+  width: 20px;
+  transform: rotate(90deg);
+  margin-right: 1rem;
+}
+
+.line {
+  border: 0.5px solid black;
+  border-radius: 15px;
+  height: 1px;
+  width: 185px;
 }

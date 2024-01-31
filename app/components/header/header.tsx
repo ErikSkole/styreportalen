@@ -1,7 +1,9 @@
+import Link from 'next/link'
+
 export default function Header() {
     return (
         <main className="header">
-            <h1>Program.no</h1>
+            <Link className='flex items-center' href="/"><h1>Program.no</h1></Link>
             <button className='homeBtn'>
                 button
             </button>
