@@ -1,12 +1,15 @@
-import Link from 'next/link'
+import Results from '@/app/components/search/results';
+import SearchBar from '@/app/components/search/search';
+import Filter from '@/app/components/search/filter';
 
-export default function Home() {
-  return (
-    <main className="main flex min-h-screen flex-col items-center justify-center p-10">
-        <h1>Denne nettsiden er under arbeid</h1>
-      <div className="mainContent rounded-lg flex flex-col items-center">
-        <Link className='tempLink flex m-40' href="/search">Arrangementer</Link>
-      </div>
-    </main>
-  )
+export default function Search() {
+    return (
+        <main>
+            <SearchBar />
+            <div className="searchContent flex flex-row justify-end items-center p-24">
+                <Results />
+                <Filter />
+            </div>
+        </main>
+    )
 }
