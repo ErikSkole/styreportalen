@@ -132,3 +132,20 @@ h2 {
   height: 1px;
   width: 185px;
 }
+
+
+/* infoPage */
+
+.infoPage {
+  margin-top: 10rem;
+}
+
+.infoPageBox {
+  padding: 2rem;
+}
+
+.infoPageImg {
+  background-color: var(--main-content-secondary);
+  padding: 10rem;
+  max-height: 10rem;
+}
