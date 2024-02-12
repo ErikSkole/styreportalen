@@ -4,36 +4,38 @@
 
 :root {
   /* Light theme */
-  --foreground-rgb: #FFFFFF;
-  --main-text: #000000;
-  --main-content: #EEEEEE;
-  --main-content-secondary: #E3E3E3;
-  --background-header: #054794;
+  --text: #04070b;
+  --text-header: #f4f7fb;
+  --background: #f5f9fc;
+  --primary: #054794;
+  --secondary: #85b3e7;
+  --accent: #5f9ee7;
 
   /* Dark theme */
-  --foreground-rgb-dark: #161616;
-  --main-text-dark: #ffffff;
-  --header-text: #ffffff;
-  --main-content-dark: #464646;
+  --text-dark: #f4f7fb;
+  --background-dark: #04070b;
+  --primary-dark: #6baefa;
+  --secondary-dark: #18477b;
+  --accent-dark: #1857a0;
 }
 
 body {
-  background-color: var(--foreground-rgb);
+  background-color: var(--background);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   height: 8vh;
-  color: var(--header-text);
-  background-color: var(--background-header);
+  color: var(--text-header);
+  background-color: var(--primary);
 }
 
 .homeBtn {
   display: flex;
   align-items: center;
   margin-right: 1rem;
-  color: var(--header-text);
+  color: var(--text-header);
   text-decoration: none;
 }
 
@@ -50,29 +52,7 @@ h2 {
 }
 
 .main { /* Container around the actual content (has the background of the page) */
-  background-color: var(--foreground-rgb);
-}
-
-.mainContent { /* The actual content of the main page */
-  height: 80vh;
-  width: 75vh;
-  background-color: var(--main-content);
-}
-
-.tempLink {
-  font-size: xx-large;
-  color: var(--header-text);
-  border-radius: 5px;
-  background-color: var(--background-header);
-  padding: 1rem;
-}
-
-.tempLink:hover {
-  background-color: #054894a9;
-}
-
-.searchContent {
-
+  background-color: var(--background);
 }
 
 .mainBox { /* Container for standard elements */
