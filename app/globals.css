@@ -6,10 +6,10 @@
   /* Light theme */
   --text: #04070b;
   --text-header: #f4f7fb;
-  --background: #f5f9fc;
+  --background: #FFFFFF;
   --primary: #054794;
-  --secondary: #85b3e7;
-  --accent: #5f9ee7;
+  --secondary: #EEEEEE;
+  --accent: #D9D9D9;
 
   /* Dark theme */
   --text-dark: #f4f7fb;
@@ -57,8 +57,8 @@ h2 {
 
 .mainBox { /* Container for standard elements */
   display: flex;
-  background-color: var(--main-content);
-  border-radius: 0.5rem;
+  background-color: var(--secondary);
+  border-radius: 0.25rem;
   padding: 5px;
   padding-top: 1rem;
   margin: 1rem;
@@ -69,8 +69,8 @@ h2 {
   display: flex;
   margin: 1rem;
   margin-top: 0;
-  background-color: var(--main-content-secondary);
-  border-radius: 0.5rem;
+  background-color: var(--accent);
+  border-radius: 0.25rem;
 }
 
 .searchBox {
@@ -78,20 +78,20 @@ h2 {
 }
 
 .filter {
-  background-color: var(--main-content-secondary);
+  background-color: var(--accent);
   margin: 0.5rem;
   padding-top: 0.5rem;
 }
 
 .filterBox {
   display: flex;
-  background-color: var(--main-content);
+  background-color: var(--secondary);
   height: 50vh;
 }
 
 .searchBarFilter {
   margin: 1rem;
-  background-color: var(--main-content-secondary);
+  background-color: var(--accent);
   height: 2.5rem;
 }
 
@@ -122,10 +122,5 @@ h2 {
 
 .infoPageBox {
   padding: 2rem;
-}
-
-.infoPageImg {
-  background-color: var(--main-content-secondary);
-  padding: 10rem;
-  max-height: 10rem;
+  width: 70vw;
 }
