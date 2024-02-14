@@ -2,12 +2,17 @@
 import mysql from 'mysql2/promise';
 
 // Create a connection object with your database credentials
-const connection = await mysql.createConnection({
-  host: 'cpanel2.norplex.no',
-  user: 'portalwe_Amalie_Skram',
-  password: 'qTdWN^=#l%A6',
-  database: 'portalwe_program_public'
-});
+export async function connectToDatabase() {
+  const connection = await mysql.createConnection({
+    host: 'cpanel2.norplex.no',
+    user: 'portalwe_Amalie_Skram',
+    password: 'qTdWN^=#l%A6',
+    database: 'portalwe_program_public'
+  });
+
+  return connection;
+
+}
 
 // Connect to the database
 console.log('Connected to the database!');
