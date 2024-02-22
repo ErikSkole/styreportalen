@@ -7,10 +7,10 @@ const infoPage = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('/api/table.ts');
+      const response = await fetch('/api/table');
       const data = await response.json();
       console.log(data)
-      setUsers(data.id);
+      setUsers(data);
     };
 
     fetchData();
@@ -19,7 +19,7 @@ const infoPage = () => {
   return (
     <div>
       <h1>Events</h1>
-      {users}
+      <p>{users}</p>
     </div>
   );
 };
