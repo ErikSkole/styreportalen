@@ -9,7 +9,6 @@ const infoPage = () => {
     const fetchData = async () => {
       const response = await fetch('/api/table');
       const data = await response.json();
-      console.log(data)
       setUsers(data);
     };
 
@@ -18,8 +17,7 @@ const infoPage = () => {
 
   return (
     <div>
-      <h1>Events</h1>
-      <p>{users}</p>
+      
     </div>
   );
 };
