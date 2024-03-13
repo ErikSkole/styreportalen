@@ -17,7 +17,7 @@ const infoPage = () => {
 
   return (
     <div>
-      
+      <h1 className='pt-4'>Her kommer info om arrangementet</h1>
     </div>
   );
 };
