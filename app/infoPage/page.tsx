@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const infoPage = () => {
+const InfoPage = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -22,4 +22,4 @@ const infoPage = () => {
   );
 };
 
-export default infoPage;
+export default InfoPage;
