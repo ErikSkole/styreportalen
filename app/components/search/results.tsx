@@ -20,7 +20,7 @@ export default function Results() {
 
     return (
         <main className="mainBox flex-col basis-1/2 min-h-1/2">
-            {users.map((user:any, index) => (
+            {users && users.length && users.map((user:any, index) => (
                 <ul key={index}>
                     <Link href="/infoPage">
                         <Arrangement title={user.name} desc={user.description} pic={user.picture_thumb}/>
