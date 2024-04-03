@@ -26,7 +26,7 @@ export default function Results() {
                         pathname: '/infoPage',
                         query: { id: event.id, }
                     }}>
-                        <Arrangement title={event.name} desc={event.description} pic={event.picture_thumb}/>
+                        <Arrangement title={event.title} desc={event.name} pic={event.picture_thumb}/>
                     </Link>
                 </ul>
             ))}
