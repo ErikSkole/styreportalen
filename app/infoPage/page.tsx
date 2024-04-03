@@ -9,13 +9,14 @@ const InfoPage = ({
     id:any, 
   }
   }) => {
-  const [event, setEvent] = useState([]);
+  const [event, setEvent] = useState<any[]>([]);
 
   useEffect(() => {
     const id = searchParams.id;
     const fetchData = async () => {
       const response = await fetch(`/api/arrangement?id=${encodeURIComponent(id)}`);
       const data = await response.json();
+      console.log(data)
       setEvent(data);
     };
 
@@ -24,8 +25,9 @@ const InfoPage = ({
 
   return (
     <div>
-      <h1 className='pt-4'>her - {event.name}</h1>
-      <h2>{searchParams.id}</h2>
+      <h1 className='pt-4'>{event[0]?.name}</h1>
+      <img src={event[0]?.picture_normal} alt="Event bilde" />
+      <p>{event[0]?.description}</p>
     </div>
   );
 };
