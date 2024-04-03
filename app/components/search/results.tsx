@@ -6,13 +6,13 @@ import Arrangement from "./arrangement"
 import Link from "next/link";
 
 export default function Results() {
-    const [users, setUsers] = useState([]);
+    const [event, setEvent] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
         const response = await fetch('/api/table');
         const data = await response.json();
-        setUsers(data);
+        setEvent(data);
         };
 
         fetchData();
@@ -20,13 +20,13 @@ export default function Results() {
 
     return (
         <main className="mainBox flex-col basis-1/2 min-h-1/2">
-            {users && users.length && users.map((user:any, index) => (
+            {event && event.length && event.map((event:any, index) => (
                 <ul key={index}>
                     <Link href={{
                         pathname: '/infoPage',
-                        query: { id: user.id, }
+                        query: { id: event.id, }
                     }}>
-                        <Arrangement title={user.name} desc={user.description} pic={user.picture_thumb}/>
+                        <Arrangement title={event.name} desc={event.description} pic={event.picture_thumb}/>
                     </Link>
                 </ul>
             ))}
