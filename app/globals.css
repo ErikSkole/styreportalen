@@ -10,6 +10,7 @@
   --primary: #054794;
   --secondary: #EEEEEE;
   --accent: #D9D9D9;
+  --footer-background: #0e2540;
 
   /* Dark theme */
   --text-dark: #f4f7fb;
@@ -21,6 +22,9 @@
 
 body {
   background-color: var(--background);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -43,8 +47,6 @@ h1 {
   font-size: 2rem;
   margin: 0;
   padding: 0;
-  align-self: center;
-  margin-left: 1rem;
 }
 
 h2 {
@@ -123,4 +125,14 @@ h2 {
 .infoPageBox {
   padding: 2rem;
   width: 70vw;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  height: 12rem;
+  color: var(--text-header);
+  background-color: var(--footer-background);
 }
