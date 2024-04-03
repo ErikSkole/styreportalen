@@ -130,6 +130,7 @@ h2 {
 
 .footer {
   display: flex;
+  flex-direction: row;
   margin-top: auto;
   height: 12rem;
   color: var(--text-header);
