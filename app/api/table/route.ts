@@ -2,7 +2,6 @@ import { query } from '../../../db';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(req: NextRequest) {
-  
     if (req.method !== 'GET') {
       return NextResponse.json({ error: 'Method Not Allowed' });
     }

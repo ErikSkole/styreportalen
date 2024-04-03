@@ -1,15 +1,22 @@
 'use client'
-
+import React from 'react';
 import { useEffect, useState } from 'react';
 
-const InfoPage = () => {
-  const [users, setUsers] = useState([]);
+const InfoPage = ({ 
+  searchParams,
+  }: 
+  { searchParams: { 
+    id:any, 
+  }
+  }) => {
+  const [event, setEvent] = useState([]);
 
   useEffect(() => {
+    const id = searchParams.id;
     const fetchData = async () => {
-      const response = await fetch('/api/table');
+      const response = await fetch(`/api/arrangement?id=${encodeURIComponent(id)}`);
       const data = await response.json();
-      setUsers(data);
+      setEvent(data);
     };
 
     fetchData();
@@ -17,7 +24,8 @@ const InfoPage = () => {
 
   return (
     <div>
-      <h1 className='pt-4'>Her kommer info om arrangementet</h1>
+      <h1 className='pt-4'>her - {event.name}</h1>
+      <h2>{searchParams.id}</h2>
     </div>
   );
 };

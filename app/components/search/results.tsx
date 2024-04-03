@@ -22,7 +22,10 @@ export default function Results() {
         <main className="mainBox flex-col basis-1/2 min-h-1/2">
             {users && users.length && users.map((user:any, index) => (
                 <ul key={index}>
-                    <Link href="/infoPage">
+                    <Link href={{
+                        pathname: '/infoPage',
+                        query: { id: user.id, }
+                    }}>
                         <Arrangement title={user.name} desc={user.description} pic={user.picture_thumb}/>
                     </Link>
                 </ul>
