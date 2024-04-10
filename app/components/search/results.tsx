@@ -19,7 +19,7 @@ export default function Results() {
     }, []);
 
     return (
-        <main className="mainBox flex-col basis-1/2 min-h-1/2">
+        <div className="mainBox flex-col basis-1/2 min-h-1/2">
             {event && event.length && event.map((event:any, index) => (
                 <ul key={index}>
                     <Link href={{
@@ -30,6 +30,6 @@ export default function Results() {
                     </Link>
                 </ul>
             ))}
-        </main>
+        </div>
     )
 }
