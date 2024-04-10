@@ -6,7 +6,7 @@ export default function Filter(props:{title:string, id:any}) {
     }
 
     return (
-        <div className="filterbox flex flex-col items-center mb-6 mt-2">
+        <div className="filterbox flex items-center mb-6 mt-2">
             <div onClick={test} className="filterContent flex flex-row m-2">
                 <img className="triangle" src="triangle.svg" />
                 <h3>{props.title}</h3>
