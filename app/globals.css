@@ -83,6 +83,7 @@ h2 {
   background-color: var(--accent);
   margin: 0.5rem;
   padding-top: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .filterBox {
@@ -91,10 +92,19 @@ h2 {
   height: 50vh;
 }
 
+.dropDown {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
 .searchBarFilter {
   margin: 1rem;
   background-color: var(--accent);
   height: 2.5rem;
+  border-radius: 0.25rem;
 }
 
 .triangle {
