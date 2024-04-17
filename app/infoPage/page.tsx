@@ -19,14 +19,14 @@ const InfoPage = ({
       console.log(data)
       setEvent(data);
     };
-
+    
     fetchData();
   }, []);
 
   return (
     <div className='flex flex-row justify-center p-4'>
       <div className='arrangement flex flex-row items-start'>
-        <img className='w-36 h-auto p-4' src={event[0]?.picture_normal} alt="Event bilde" />
+        <img className='w-36 h-auto p-4 object-contain' src={event[0]?.picture_normal} alt="Event bilde" />
         <div className="arrangementInfo p-4">
           <h1 className='pt-4'>{event[0]?.name}</h1>
           <p>{event[0]?.description}</p>
