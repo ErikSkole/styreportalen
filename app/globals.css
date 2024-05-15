@@ -53,6 +53,13 @@ h2 {
   font-size: 1.5rem;
 }
 
+.searchBar {
+  border: 2px solid #6a6a6a;
+  border-radius: 5px;
+  padding: 2.5px;
+  width: 30rem;
+}
+
 .main { /* Container around the actual content (has the background of the page) */
   background-color: var(--background);
 }
