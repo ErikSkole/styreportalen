@@ -19,17 +19,17 @@ export default function Results() {
     }, []);
 
     return (
-        <main className="mainBox flex-col basis-1/2 min-h-1/2">
+        <div className="mainBox flex-col basis-1/2 min-h-1/2">
             {event && event.length && event.map((event:any, index) => (
                 <ul key={index}>
                     <Link href={{
                         pathname: '/infoPage',
                         query: { id: event.id, }
                     }}>
-                        <Arrangement title={event.title} desc={event.name} pic={event.picture_thumb}/>
+                        <Arrangement title={event.name} desc={event.description} pic={event.picture_normal}/>
                     </Link>
                 </ul>
             ))}
-        </main>
+        </div>
     )
 }

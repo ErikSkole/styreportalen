@@ -83,6 +83,7 @@ h2 {
   background-color: var(--accent);
   margin: 0.5rem;
   padding-top: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .filterBox {
@@ -91,14 +92,19 @@ h2 {
   height: 50vh;
 }
 
+.dropDown {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
 .searchBarFilter {
   margin: 1rem;
   background-color: var(--accent);
   height: 2.5rem;
-}
-
-.filterContent {
-
+  border-radius: 0.25rem;
 }
 
 .triangle {
@@ -106,6 +112,10 @@ h2 {
   width: 20px;
   transform: rotate(90deg);
   margin-right: 1rem;
+}
+
+.open {
+  transform: rotate(180deg);
 }
 
 .line {
