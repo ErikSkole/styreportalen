@@ -13,9 +13,13 @@ export default function Filter(props:{title:any, id:any,}) {
     }
 
     const { setDateEvent } = useContext(DateContext);
+    const { setStedEvent } = useContext(DateContext);
 
     const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setDateEvent(event.target.value);
+    };
+    const handleStedChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setStedEvent(event.target.value);
     };
 
     const [filter, setFilter] = useState([]);
@@ -46,7 +50,7 @@ export default function Filter(props:{title:any, id:any,}) {
                     <ul key={index}>
                         <label>
                             {filter}
-                            <input type="checkbox" id="filter" value={filter} />
+                            <input type="radio" name='test' id="filter" value={filter} onChange={handleStedChange}/>
                         </label>
                     </ul>
                 )) || <input type="date" id='dateEvent' onChange={handleDateChange}/>}

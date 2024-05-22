@@ -7,7 +7,7 @@ export async function GET(req: NextRequest) {
     }
     try {
         const name = req.nextUrl.searchParams.get('name');
-        const events = await query(`SELECT * FROM public_events WHERE name LIKE '%${name}%'`);
+        const events = await query(`SELECT * FROM public_events WHERE title LIKE '%${name}%'`);
         return NextResponse.json(events);
     } catch (error) {
         console.error('Error handling request:', error);

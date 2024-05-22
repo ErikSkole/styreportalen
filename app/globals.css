@@ -82,8 +82,26 @@ h2 {
   border-radius: 0.25rem;
 }
 
-.searchBox {
+.arrangementInfoPage {
+  height: 40vh;
+}
 
+.arrangementInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.infoPageBilde {
+  width: 50%;
+  height: 100%;
+}
+
+.billetterBtn {
+  border-radius: 0.25rem;
+  color: var(--text-dark);
+  background-color: var(--accent-dark);
 }
 
 .filter {
