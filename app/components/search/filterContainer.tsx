@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import Filter from '../filter/filter'
 
 export default function FilterContainer() {
-    const filterNames = ["Sted", "Tid", "test3"]
+    const filterNames = ["Tid", "Sted"]
 
     return (
         <div className="mainBox flex flex-col basis-1/4 h-1/2">

@@ -53,6 +53,13 @@ h2 {
   font-size: 1.5rem;
 }
 
+.searchBar {
+  border: 2px solid #6a6a6a;
+  border-radius: 5px;
+  padding: 2.5px;
+  width: 30rem;
+}
+
 .main { /* Container around the actual content (has the background of the page) */
   background-color: var(--background);
 }
@@ -64,7 +71,7 @@ h2 {
   padding: 5px;
   padding-top: 1rem;
   margin: 1rem;
-  min-height: 50vh;
+  min-height: 35vh;
 }
 
 .arrangement {
@@ -75,8 +82,26 @@ h2 {
   border-radius: 0.25rem;
 }
 
-.searchBox {
+.arrangementInfoPage {
+  height: 40vh;
+}
 
+.arrangementInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.infoPageBilde {
+  width: 50%;
+  height: 100%;
+}
+
+.billetterBtn {
+  border-radius: 0.25rem;
+  color: var(--text-dark);
+  background-color: var(--accent-dark);
 }
 
 .filter {

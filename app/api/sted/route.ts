@@ -6,10 +6,10 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: 'Method Not Allowed' });
     }
     try {
-      if (req.nextUrl.searchParams.has('date')) {
-        const date = req.nextUrl.searchParams.get('date');
-        console.log(date)
-        const events = await query(`SELECT * FROM public_events WHERE event_start LIKE '%${date}%'`);
+      if (req.nextUrl.searchParams.has('sted')) {
+        const sted = req.nextUrl.searchParams.get('sted');
+        console.log(sted)
+        const events = await query(`SELECT * FROM public_events WHERE place LIKE '%${sted}%'`);
         return NextResponse.json(events);
       } else {
         const events = await query('SELECT * FROM public_events');

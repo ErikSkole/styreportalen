@@ -5,4 +5,5 @@ export default function Header() {
     <main className="header">
         <Link className='flex items-center' href="/"><h1 className='ml-4'>Program.no</h1></Link>
     </main>
-)}
+    );
+}

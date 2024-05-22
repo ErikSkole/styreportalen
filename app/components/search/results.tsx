@@ -1,6 +1,6 @@
 "use client"
-
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { DateContext } from "@/app/context/DateContext";
 
 import Arrangement from "./arrangement"
 import Link from "next/link";
@@ -8,6 +8,7 @@ import Link from "next/link";
 export default function Results() {
     const [searchTerm, setSearchTerm] = useState<string>('');
     const [events, setEvents] = useState<any[]>([]);
+    const { dateEvent, stedEvent } = useContext(DateContext);
 
     // Function to handle the search input change
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,7 +18,7 @@ export default function Results() {
     // Function to fetch events based on the search term
     const fetchEvents = async () => {
         try {
-            const response = await fetch(searchTerm ? `/api/search?name=${encodeURIComponent(searchTerm)}` : '/api/table');
+            const response = await fetch(searchTerm ? `/api/search?name=${encodeURIComponent(searchTerm)}` : dateEvent ? `/api/table?date=${encodeURIComponent(dateEvent)}`: `/api/sted?sted=${encodeURIComponent(stedEvent)}`);
             const data = await response.json();
             setEvents(data);
         } catch (error) {
@@ -28,7 +29,7 @@ export default function Results() {
     // Call fetchEvents whenever the searchTerm changes
     useEffect(() => {
         fetchEvents();
-    }, [searchTerm]);
+    }, [searchTerm, dateEvent, stedEvent]);
 
     return (
         <div className="flex flex-col items-center " >
