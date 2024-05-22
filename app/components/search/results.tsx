@@ -31,9 +31,9 @@ export default function Results() {
     }, [searchTerm]);
 
     return (
-        <div>
-            <input 
-            type="text"
+        <div className="flex flex-col items-center " >
+            <input className="flex border"
+            type="text" 
             placeholder="Search for events..."
             value={searchTerm}
             onChange={handleSearchChange}
